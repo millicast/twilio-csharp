@@ -25,7 +25,7 @@ namespace Twilio.Tests.Jwt.AccessToken
     [TestFixture]
     public class AccessTokenTests
     {
-        private static readonly string Secret = "superdupersecretsecret";
+        private static readonly string Secret = "superdupersecretsecretsuperdupersecretsecret";
 
         private Dictionary<string, object> ToDict(object o)
         {

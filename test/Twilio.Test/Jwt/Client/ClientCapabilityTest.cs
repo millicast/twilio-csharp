@@ -10,7 +10,7 @@ namespace Twilio.Tests.Jwt.Client
     public class ClientCapabilityTest
     {
         private static readonly string AccountSid = "AC123";
-        private static readonly string Secret = "superdupersecretsecret";
+        private static readonly string Secret = "superdupersecretsecretsuperdupersecretsecret";
 
         [Test]
         public void TestEmptyToken()

@@ -11,7 +11,7 @@ namespace Twilio.Tests.Jwt.Taskrouter
     public class TaskRouterCapabilityTest
     {
         private static readonly string AccountSid = "AC123";
-        private static readonly string AuthToken = "superdupersecretsecret";
+        private static readonly string AuthToken = "superdupersecretsecretsuperdupersecretsecret";
         private static readonly string WorkspaceSid = "WS123";
         private static readonly string WorkerSid = "WK123";
 

@@ -9,7 +9,7 @@ namespace Twilio.Tests.Jwt
 {
     class TestJwt : BaseJwt
     {
-        public static string SECRET = "superduperduperdupersecret";
+        public const string SECRET = "superdupersecretsecretsuperdupersecretsecret";
         
         private DateTime? _nbf;
 
