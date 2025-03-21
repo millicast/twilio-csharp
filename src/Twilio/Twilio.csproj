@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup Label="NuGet">
-    <TargetFrameworks>net6.0;netstandard2.1;net462;net35</TargetFrameworks>
+    <!--<TargetFrameworks>net6.0;netstandard2.1;net462;net35</TargetFrameworks>-->
+    <TargetFramework>net6.0</TargetFramework>
     <IsPackable>true</IsPackable>
     <PackageId>Twilio</PackageId>
     <Description>Twilio REST API helper library</Description>
@@ -8,8 +9,6 @@
     <AssemblyTitle>Twilio</AssemblyTitle>
     <NeutralLanguage>en-US</NeutralLanguage>
     <VersionPrefix>7.9.1</VersionPrefix>
-    <VersionSuffix>
-    </VersionSuffix>
     <Authors>Twilio</Authors>
     <NoWarn>CS1587;CS1591;CS1570;CS1573;CS1572;CS8618;CS8603;CS8625;CS8604;CS8765</NoWarn>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
@@ -18,16 +17,20 @@
     <PackageTags>REST;SMS;voice;telephony;phone;twilio;twiml;video;wireless;api</PackageTags>
     <PackageIconUrl>https://www.twilio.com/docs/static/company/img/logos/red/twilio-mark-red.898073bba.png</PackageIconUrl>
     <PackageProjectUrl>http://github.com/twilio/twilio-csharp</PackageProjectUrl>
-    <PackageLicenseUrl>https://github.com/twilio/twilio-csharp/blob/HEAD/LICENSE</PackageLicenseUrl>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <RepositoryUrl>http://github.com/twilio/twilio-csharp</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <NetStandardImplicitPackageVersion Condition=" '$(TargetFramework)' == 'netstandard2.1' ">2.1.0</NetStandardImplicitPackageVersion>
+    <!--<NetStandardImplicitPackageVersion Condition=" '$(TargetFramework)' == 'netstandard2.1' ">2.1.0</NetStandardImplicitPackageVersion>-->
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
   <ItemGroup>
     <None Include="../../README.md" Pack="true" PackagePath="\"/>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="../../LICENSE" Pack="true" PackagePath="\"/>
+  </ItemGroup>
+<!--
 <ItemGroup>
   <Reference Include="System.Web.Extensions">
   </Reference>
@@ -36,12 +39,14 @@
     <Reference Include="System.Xml.Linq" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
+-->
   <ItemGroup Condition=" '$(TargetFramework)' == 'net6.0' ">
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.3.1" />
     <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.3.1" />
-    <PackageReference Include="System.Collections.Specialized" Version="4.3.0" />
+    <!--<PackageReference Include="System.Collections.Specialized" Version="4.3.0" />-->
   </ItemGroup>
+<!--
   <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.1' ">
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.3.1" />
@@ -66,4 +71,5 @@
     <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.0" PrivateAssets="All" />
     <PackageReference Include="jnm2.ReferenceAssemblies.net35" Version="1.0.1" PrivateAssets="All" />
   </ItemGroup>
+-->
 </Project>

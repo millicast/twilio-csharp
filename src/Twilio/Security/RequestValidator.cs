@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.Specialized;
+//using System.Collections.Specialized;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -24,6 +24,7 @@ namespace Twilio.Security
             _sha = SHA256.Create();
         }
 
+/*
         /// <summary>
         /// Validate against a request
         /// </summary>
@@ -35,6 +36,7 @@ namespace Twilio.Security
         {
             return Validate(url, ToDictionary(parameters), expected);
         }
+*/
 
         /// <summary>
         /// Validate against a request
@@ -74,6 +76,7 @@ namespace Twilio.Security
             return SecureCompare(BitConverter.ToString(signature).Replace("-","").ToLower(), expected);
         }
 
+/*
         private static IDictionary<string, string> ToDictionary(NameValueCollection col)
         {
             var dict = new Dictionary<string, string>();
@@ -83,6 +86,7 @@ namespace Twilio.Security
             }
             return dict;
         }
+*/
 
         private string GetValidationSignature(string url, IDictionary<string, string> parameters)
         {
