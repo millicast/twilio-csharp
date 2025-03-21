@@ -3,7 +3,7 @@
     <!--<TargetFrameworks>net6.0;netstandard2.1;net462;net35</TargetFrameworks>-->
     <TargetFramework>net6.0</TargetFramework>
     <IsPackable>true</IsPackable>
-    <PackageId>Twilio</PackageId>
+    <PackageId>Twilio.Millicast</PackageId>
     <Description>Twilio REST API helper library</Description>
     <Copyright>Copyright © Twilio</Copyright>
     <AssemblyTitle>Twilio</AssemblyTitle>
