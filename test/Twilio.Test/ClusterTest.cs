@@ -11,6 +11,7 @@ using System.Linq;
 using Twilio.Credential;
 namespace Twilio.Tests 
 {
+    [Ignore("requires real data")]
     [TestFixture]
     class ClusterTest 
     {
