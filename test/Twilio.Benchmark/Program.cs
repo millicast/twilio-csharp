@@ -1,4 +1,4 @@
-﻿using System.Collections.Specialized;
+﻿//using System.Collections.Specialized;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Running;
 using Twilio.Security;
@@ -14,6 +14,7 @@ public class RequestValidationBenchmark
     private const string UnhappyPathSignature = "eYYN9fMlxrQMXOsr7bIzoPTrbxA=";
     private const string HappyPathUrl = "https://mycompany.com/myapp.php?foo=1&bar=2";
     private const string HappyPathSignature = "3LL3BFKOcn80artVM5inMPFpmtU=";
+/*
     private static readonly NameValueCollection UnhappyPathParameters = new()
     {
         {"ToCountry", "US"},
@@ -37,6 +38,7 @@ public class RequestValidationBenchmark
         {"From", "+10123456789"},
         {"ApiVersion", "2010-04-01"}
     };
+*/
     private static readonly Dictionary<string, string> HappyPathParameters = new()
     {
         {"ToCountry", "US"},
@@ -62,6 +64,7 @@ public class RequestValidationBenchmark
     };
 
 
+/*
     [Benchmark]
     public void OriginalUnhappyPath()
     {
@@ -75,6 +78,7 @@ public class RequestValidationBenchmark
         var requestValidator = new RequestValidator(Secret);
         requestValidator.Validate(UnhappyPathUrl, UnhappyPathParameters, UnhappyPathSignature);
     }
+*/
 
     [Benchmark]
     public void OriginalHappyPath()
