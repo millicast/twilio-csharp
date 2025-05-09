@@ -8,7 +8,6 @@
     <Copyright>Copyright © Twilio</Copyright>
     <AssemblyTitle>Twilio</AssemblyTitle>
     <NeutralLanguage>en-US</NeutralLanguage>
-    <VersionPrefix>7.9.1</VersionPrefix>
     <Authors>Twilio</Authors>
     <NoWarn>CS1587;CS1591;CS1570;CS1573;CS1572;CS8618;CS8603;CS8625;CS8604;CS8765</NoWarn>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
@@ -16,13 +15,15 @@
     <AssemblyName>Twilio</AssemblyName>
     <PackageTags>REST;SMS;voice;telephony;phone;twilio;twiml;video;wireless;api</PackageTags>
     <PackageIconUrl>https://www.twilio.com/docs/static/company/img/logos/red/twilio-mark-red.898073bba.png</PackageIconUrl>
-    <PackageProjectUrl>http://github.com/twilio/twilio-csharp</PackageProjectUrl>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <RepositoryUrl>http://github.com/twilio/twilio-csharp</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <!--<NetStandardImplicitPackageVersion Condition=" '$(TargetFramework)' == 'netstandard2.1' ">2.1.0</NetStandardImplicitPackageVersion>-->
     <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PackageProjectUrl>https://github.com/millicast/twilio-csharp</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/millicast/twilio-csharp</RepositoryUrl>
   </PropertyGroup>
   <ItemGroup>
     <None Include="../../README.md" Pack="true" PackagePath="\"/>
